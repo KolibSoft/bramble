@@ -10,27 +10,20 @@ public class LibController : ControllerBase
     public IWebHostEnvironment Environment { get; }
 
     [EnableCors("Allow-All")]
-    [HttpGet("js/{**pathParts}")]
-    public IActionResult GetJs(string[] pathParts)
+    [HttpGet("{**pathParts}")]
+    public IActionResult Get(string[] pathParts)
     {
-        var path = Path.Combine(Environment.ContentRootPath, "wwwroot", "lib", "js", string.Join(Path.DirectorySeparatorChar, pathParts));
+        var path = Path.Combine(Environment.ContentRootPath, "wwwroot", "lib", string.Join(Path.DirectorySeparatorChar, pathParts));
         if (System.IO.File.Exists(path))
         {
             var bytes = System.IO.File.ReadAllBytes(path);
-            return File(bytes, "text/javascript");
-        }
-        return NotFound();
-    }
-
-    [EnableCors("Allow-All")]
-    [HttpGet("css/{*pathParts}")]
-    public IActionResult GetCss(string[] pathParts)
-    {
-        var path = Path.Combine(Environment.ContentRootPath, "wwwroot", "lib", "css", string.Join(Path.DirectorySeparatorChar, pathParts));
-        if (System.IO.File.Exists(path))
-        {
-            var bytes = System.IO.File.ReadAllBytes(path);
-            return File(bytes, "text/css");
+            switch (Path.GetExtension(path))
+            {
+                case ".html": return File(bytes, "text/html");
+                case ".css": return File(bytes, "text/css");
+                case ".js": return File(bytes, "text/javascript");
+                case ".ttf": return File(bytes, "font/ttf");
+            }
         }
         return NotFound();
     }

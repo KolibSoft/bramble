@@ -1,0 +1,18 @@
+.overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: 0.25s;
+    overflow: hidden;
+}
+
+.collection {
+    border: 1px solid var(--alter-color);
+}
+
+.collection .item:not(:last-child) {
+    border-bottom: 1px solid var(--alter-color);
+}

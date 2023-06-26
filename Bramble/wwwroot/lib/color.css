@@ -1,0 +1,46 @@
+.theme {
+    --primary-color: cornflowerblue;
+    --secondary-color: cadetblue;
+    --neutral-color: white;
+    --alter-color: silver;
+}
+
+.primary-content {
+    --surface-color: var(--neutral-color);
+    --text-color: var(--primary-color);
+    --disabled-color: var(--alter-color);
+
+    background-color: var(--surface-color);
+    color: var(--text-color);
+    transition: 0.25s;
+}
+
+.primary-accent {
+    --surface-color: var(--primary-color);
+    --text-color: var(--neutral-color);
+    --disabled-color: var(--alter-color);
+
+    background-color: var(--surface-color);
+    color: var(--text-color);
+    transition: 0.25s;
+}
+
+.secondary-content {
+    --surface-color: var(--neutral-color);
+    --text-color: var(--secondary-color);
+    --disabled-color: var(--alter-color);
+
+    background-color: var(--surface-color);
+    color: var(--text-color);
+    transition: 0.25s;
+}
+
+.secondary-accent {
+    --surface-color: var(--secondary-color);
+    --text-color: var(--neutral-color);
+    --disabled-color: var(--alter-color);
+
+    background-color: var(--surface-color);
+    color: var(--text-color);
+    transition: 0.25s;
+}

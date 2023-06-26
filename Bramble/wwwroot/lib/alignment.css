@@ -1,0 +1,65 @@
+.text-center {
+    text-align: center;
+}
+
+/* --- --- --- --- --- --- --- --- --- --- */
+
+.hflex {
+    display: flex;
+    flex-direction: row;
+}
+
+.hflex-reverse {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.vflex {
+    display: flex;
+    flex-direction: column;
+}
+
+.vflex-reverse {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+/* --- --- --- --- --- --- --- --- --- --- */
+
+.justify-start {
+    justify-content: start;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-end {
+    justify-content: end;
+}
+
+.justify-around {
+    justify-content: space-around;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+/* --- --- --- --- --- --- --- --- --- --- */
+
+.content-start {
+    align-items: start;
+}
+
+.content-center {
+    align-items: center;
+}
+
+.content-end {
+    align-items: end;
+}
+
+.content-stretch {
+    align-items: stretch;
+}

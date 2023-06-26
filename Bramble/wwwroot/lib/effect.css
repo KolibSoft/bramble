@@ -1,0 +1,42 @@
+.hoverable:hover {
+    filter: brightness(112.5%);
+    background-color: var(--surface-color);
+    transition: 0.25s;
+}
+
+/* --- --- --- --- --- --- --- --- --- --- --- --- --- */
+
+.clickable {
+    cursor: pointer;
+    background-color: var(--surface-color);
+    transition: 0.25s;
+}
+
+.clickable:hover {
+    filter: brightness(112.5%);
+    background-color: var(--surface-color);
+    transition: 0.25s;
+}
+
+.clickable:active {
+    filter: brightness(125%);
+    background-color: var(--surface-color);
+    transition: 0.25s;
+}
+
+/* --- --- --- --- --- --- --- --- --- --- --- --- --- */
+
+.small-shadow {
+    box-shadow: 0em 0.125em 0.5em rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+.medium-shadow {
+    box-shadow: 0em 0.25em 0.5em rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+.large-shadow {
+    box-shadow: 0em 0.5em 0.5em rgba(0, 0, 0, 0.5);
+    position: relative;
+}

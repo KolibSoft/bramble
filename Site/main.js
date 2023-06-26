@@ -1,3 +1,1 @@
-import { test } from "https://bramble.azurewebsites.net/lib/js/main.js";
-
-test();
+import { } from "http://localhost:5101/lib/main.js";

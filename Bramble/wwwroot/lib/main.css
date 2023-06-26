@@ -1,0 +1,157 @@
+@import url("./color.css");
+@import url("./text.css");
+@import url("./effect.css");
+@import url("./transition.css");
+@import url("./component.css");
+@import url("./alignment.css");
+
+
+.block {
+    display: block;
+}
+
+.iblock {
+    display: inline-block;
+}
+
+/* --- --- --- --- --- --- --- --- --- --- */
+
+.no-list li {
+    list-style: none;
+}
+
+.no-decoration {
+    text-decoration: none;
+}
+
+/* --- --- --- --- --- --- --- --- --- --- */
+
+.horizontal-content {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.vertical-content {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+/* --- --- --- --- --- --- --- --- --- --- */
+
+.flat-content {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+.ellipse-content {
+    border-radius: 50%;
+}
+
+/* --- --- --- --- --- --- --- --- */
+
+.small-block {
+    margin: 0.00em;
+    border: 0;
+    padding: 0.25em;
+}
+
+.medium-block {
+    margin: 0.00em;
+    border: 0;
+    padding: 0.50em;
+}
+
+.large-block {
+    margin: 0.00em;
+    border: 0;
+    padding: 0.75em;
+}
+
+/* --- --- --- --- --- --- --- --- */
+
+.small-frame {
+    margin: 0.25em;
+    border: 0;
+    padding: 0.00em;
+}
+
+.medium-frame {
+    margin: 0.50em;
+    border: 0;
+    padding: 0.00em;
+}
+
+.large-frame {
+    margin: 0.75em;
+    border: 0;
+    padding: 0.00em;
+}
+
+/* --- --- --- --- --- --- --- --- */
+
+.small-box {
+    margin: 0.25em;
+    border: 0;
+    padding: 0.25em;
+}
+
+.medium-box {
+    margin: 0.50em;
+    border: 0;
+    padding: 0.50em;
+}
+
+.large-box {
+    margin: 0.75em;
+    border: 0;
+    padding: 0.75em;
+}
+
+/* --- --- --- --- --- --- --- --- */
+
+.small-round {
+    border-radius: 0.25em;
+}
+
+.medium-round {
+    border-radius: 0.50em;
+}
+
+.large-round {
+    border-radius: 0.75em;
+}
+
+/* --- --- --- --- --- --- --- --- --- --- */
+
+.fixed-left {
+    position: fixed;
+    left: 0em;
+}
+
+.fixed-top {
+    position: fixed;
+    top: 0em;
+}
+
+.fixed-right {
+    position: fixed;
+    right: 0em;
+}
+
+.fixed-bottom {
+    position: fixed;
+    bottom: 0em;
+}
+
+.fixed-horizontally {
+    position: fixed;
+    left: 0em;
+    width: calc(100vw);
+}
+
+.fixed-vertically {
+    position: fixed;
+    top: 0em;
+    height: calc(100vh);
+}

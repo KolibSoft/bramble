@@ -1,0 +1,330 @@
+@keyframes hide {
+    0% {
+        opacity: 100%;
+    }
+
+    99% {
+        opacity: 0%;
+        transform: scale(100%, 100%);
+    }
+
+    100% {
+        opacity: 0%;
+        transform: scale(0%, 0%);
+    }
+}
+
+@keyframes show {
+    0% {
+        opacity: 0%;
+        transform: scale(0%, 0%);
+    }
+
+    1% {
+        transform: scale(100%, 100%);
+        opacity: 0%;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}
+
+/* --- --- --- --- --- --- --- --- --- */
+
+@keyframes hide-left {
+    0% {
+        transform: translateX(0%);
+    }
+
+    99% {
+        transform: translateX(-100%) scale(100%, 100%);
+    }
+
+    100% {
+        transform: scale(0%, 0%);
+    }
+}
+
+@keyframes show-left {
+    0% {
+        transform: scale(0%, 0%);
+    }
+
+    1% {
+        transform: translateX(-100%) scale(100%, 100%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+
+/* --- --- --- --- --- --- --- --- --- */
+
+@keyframes hide-right {
+    0% {
+        transform: translateX(0%);
+    }
+
+    99% {
+        transform: translateX(+100%) scale(100%, 100%);
+    }
+
+    100% {
+        transform: scale(0%, 0%);
+    }
+}
+
+@keyframes show-right {
+    0% {
+        transform: scale(0%, 0%);
+    }
+
+    1% {
+        transform: translateX(+100%) scale(100%, 100%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+/* --- --- --- --- --- --- --- --- --- */
+
+@keyframes hide-top {
+    0% {
+        transform: translateY(0%);
+    }
+
+    99% {
+        transform: translateY(-100%) scale(100%, 100%);
+    }
+
+    100% {
+        transform: scale(0%, 0%);
+    }
+}
+
+@keyframes show-top {
+    0% {
+        transform: scale(0%, 0%);
+    }
+
+    1% {
+        transform: translateY(-100%) scale(100%, 100%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+/* --- --- --- --- --- --- --- --- --- */
+
+@keyframes hide-bottom {
+    0% {
+        transform: translateY(0%);
+    }
+
+    99% {
+        transform: translateY(+100%) scale(100%, 100%);
+    }
+
+    100% {
+        transform: scale(0%, 0%);
+    }
+}
+
+@keyframes show-bottom {
+    0% {
+        transform: scale(0%, 0%);
+    }
+
+    1% {
+        transform: translateY(+100%) scale(100%, 100%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+/* --- --- --- --- --- --- --- --- --- */
+
+@keyframes hide-in {
+    0% {
+        transform: scale(100%, 100%);
+    }
+
+    100% {
+        transform: scale(0%, 0%);
+    }
+}
+
+@keyframes show-in {
+    0% {
+        transform: scale(0%, 0%);
+    }
+
+    100% {
+        transform: scale(100%, 100%);
+    }
+}
+
+/* --- --- --- --- --- --- --- --- --- */
+
+@keyframes hide-out {
+    0% {
+        transform: scale(100%, 100%);
+    }
+
+    99% {
+        transform: scale(200%, 200%);
+    }
+
+    100% {
+        transform: scale(0%, 0%);
+    }
+}
+
+@keyframes show-out {
+    0% {
+        transform: scale(0%, 0%);
+    }
+
+    1% {
+        transform: scale(200%, 200%);
+    }
+
+    100% {
+        transform: scale(100%, 100%);
+    }
+}
+
+/* --- --- --- --- --- --- --- --- --- */
+
+.hidden {
+    animation: hide 0.25s forwards;
+}
+
+.hidden.toggled {
+    animation: show 0.25s forwards;
+}
+
+.showed {
+    animation: show 0.25s forwards;
+}
+
+.showed.toggled {
+    animation: hide 0.25s forwards;
+}
+
+/* --- --- --- --- --- --- --- --- --- */
+
+.hidden-left {
+    animation: hide-left 0.25s forwards;
+}
+
+.hidden-left.toggled {
+    animation: show-left 0.25s forwards;
+}
+
+.showed-left {
+    animation: show-left 0.25s forwards;
+}
+
+.showed-left.toggled {
+    animation: hide-left 0.25s forwards;
+}
+
+/* --- --- --- --- --- --- --- --- --- */
+
+.hidden-right {
+    animation: hide-right 0.25s forwards;
+}
+
+.hidden-right.toggled {
+    animation: show-right 0.25s forwards;
+}
+
+.showed-right {
+    animation: show-right 0.25s forwards;
+}
+
+.showed-right.toggled {
+    animation: hide-right 0.25s forwards;
+}
+
+/* --- --- --- --- --- --- --- --- --- */
+
+.hidden-top {
+    animation: hide-top 0.25s forwards;
+}
+
+.hidden-top.toggled {
+    animation: show-top 0.25s forwards;
+}
+
+.showed-top {
+    animation: show-top 0.25s forwards;
+}
+
+.showed-top.toggled {
+    animation: hide-top 0.25s forwards;
+}
+
+/* --- --- --- --- --- --- --- --- --- */
+
+.hidden-bottom {
+    animation: hide-bottom 0.25s forwards;
+}
+
+.hidden-bottom.toggled {
+    animation: show-bottom 0.25s forwards;
+}
+
+.showed-bottom {
+    animation: show-bottom 0.25s forwards;
+}
+
+.showed-bottom.toggled {
+    animation: hide-bottom 0.25s forwards;
+}
+
+/* --- --- --- --- --- --- --- --- --- */
+
+.hidden-in {
+    animation: hide-in 0.25s forwards;
+}
+
+.hidden-in.toggled {
+    animation: show-in 0.25s forwards;
+}
+
+.showed-in {
+    animation: show-in 0.25s forwards;
+}
+
+.showed-in.toggled {
+    animation: hide-in 0.25s forwards;
+}
+
+/* --- --- --- --- --- --- --- --- --- */
+
+.hidden-out {
+    animation: hide-out 0.25s forwards;
+}
+
+.hidden-out.toggled {
+    animation: show-out 0.25s forwards;
+}
+
+.showed-out {
+    animation: show-out 0.25s forwards;
+}
+
+.showed-out.toggled {
+    animation: hide-out 0.25s forwards;
+}

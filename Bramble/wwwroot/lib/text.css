@@ -1,0 +1,34 @@
+@font-face {
+    font-family: Heebo;
+    src: url("./heebo.ttf");
+}
+
+* {
+    font-family: Heebo;
+}
+
+.small-text {
+    font-size: 0.75em;
+}
+
+.medium-text {
+    font-size: 1.00em;
+}
+
+.large-text {
+    font-size: 1.25em;
+}
+
+/* --- --- --- --- --- --- --- --- */
+
+.light-text {
+    font-weight: lighter;
+}
+
+.normal-text {
+    font-weight: normal;
+}
+
+.bold-text {
+    font-weight: bolder;
+}
