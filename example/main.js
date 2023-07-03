@@ -1,2 +1,2 @@
-// import { } from "https://bramble.azurewebsites.net/lib/main.js";
+// import { } from "https://kolibsoft.github.io/bramble/lib/main.js";
 import { } from "../lib/main.js";
