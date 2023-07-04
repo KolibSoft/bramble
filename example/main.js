@@ -12,4 +12,4 @@ console.log(Data.getData(views.item));
 console.log(Data.setData(views.item, "Another value"));
 console.log(Data.getData(views.item));
 
-console.log(await Layouts.getLayout("./item.html"))
+Layouts.setLayouts();
