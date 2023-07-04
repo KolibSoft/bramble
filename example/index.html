@@ -32,9 +32,14 @@
         </h2>
     </header>
 
-    <main data-view="main" data-data="bag">
+    <main data-view="main">
 
         <div data-view="item" data-layout="./item.html" data-data="value">ITEM TO REPLACE</div>
+
+        <p data-bind data-bind-text="text">#</p>
+        <p data-bind data-bind-html="html">#</p>
+        <input data-bind data-bind-value="value"/>
+        <img src="#" data-bind data-bind-src="src"/>
 
         <div class="primary-content medium-shadow large-box large-round clickable" data-toggle="notification">
             <h2>Main Content</h2>
