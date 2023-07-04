@@ -25,36 +25,19 @@
 <body class="flat-content theme font-medium" data-data="#">
 
     <header>
-        <h1 class="block small-block primary-accent">Example Site</h1>
+        <h1 class="block small-block primary-accent" data-bind-text="site-name">#</h1>
         <h2 class="flat-content primary-accent small-shadow hflex justify-between">
             <i class="fa-bars fa-solid small-block clickable" data-toggle="sidebar"></i>
             <i class="fa-bars fa-solid small-block clickable" data-toggle="options"></i>
         </h2>
     </header>
 
-    <main data-view="main">
+    <main>
 
-        <div data-view="item" data-layout="./item.html" data-data="value">ITEM TO REPLACE</div>
-
-        <p data-bind data-bind-text="text">#</p>
-        <p data-bind data-bind-html="html">#</p>
-        <input data-bind data-bind-value="value"/>
-        <img src="#" data-bind data-bind-src="src"/>
-
-        <div class="primary-content medium-shadow large-box large-round clickable" data-toggle="notification">
-            <h2>Main Content</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt enim adipisci quo debitis soluta
-                quaerat
-                reiciendis, quas, officia necessitatibus ipsa voluptatibus consectetur deleniti minus quia voluptatem
-                voluptates dicta ad ullam!</p>
-        </div>
-
-        <div class="primary-content medium-shadow large-box large-round clickable" data-toggle="notification">
-            <h2 data-data="value">Main Content</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt enim adipisci quo debitis soluta
-                quaerat
-                reiciendis, quas, officia necessitatibus ipsa voluptatibus consectetur deleniti minus quia voluptatem
-                voluptates dicta ad ullam!</p>
+        <div class="primary-content medium-shadow large-box large-round clickable" data-toggle="notification"
+            data-data="main">
+            <h2 data-bind-text="title">#</h2>
+            <p data-bind-text="content">#</p>
         </div>
 
     </main>
@@ -68,6 +51,7 @@
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur quos corrupti nostrum,
                     similique quaerat earum in provident quisquam, consequatur, harum id amet nulla nihil. Eligendi
                     nesciunt excepturi omnis suscipit est!</p>
+                <input data-data="form" data-bind-value="value" class="primary-content medium-text bold-text"/>
                 <div class="hflex justify-end">
                     <input type="button" value="OK" class="medium-box small-round clickable primary-content"
                         data-toggle="modal" />
